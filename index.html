@@ -28,10 +28,69 @@ a,button{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-vi
 }
 @media(max-width:370px){.hero h1{font-size:39px}.products{gap:20px 9px}.product h3{font-size:15px}.price{font-size:10px}.add{font-size:7px}.bag{padding:9px 8px}.brand img{width:52px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Dirección de arte: paisaje cálido, composición editorial y hero inmersivo */
+.announcement{display:none}
+.header{position:absolute;top:0;left:0;right:0;height:88px;padding:0 6%;background:linear-gradient(180deg,rgba(35,31,22,.34),transparent);border:0;color:#fff;backdrop-filter:none}
+.brand img{width:76px;height:70px;filter:drop-shadow(0 2px 6px #24170a40)}
+.nav a{color:#fff;text-shadow:0 1px 8px #32231535}.nav a:hover{color:#ffe0a0}
+.bag{background:#fffaf0;color:#49321d;border-color:#fffaf0;border-radius:30px;padding:10px 16px}.bag b{background:#dca14b;color:#fff}
+.menu{color:#fff}
+.hero{display:block;position:relative;isolation:isolate;min-height:min(760px,90vh);height:720px;max-height:850px;overflow:hidden;background:#785c3e url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&w=2200&q=90') center 53%/cover no-repeat;color:white}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(33,28,20,.52) 0%,rgba(44,32,19,.25) 45%,rgba(37,27,17,.08) 100%),linear-gradient(0deg,rgba(31,27,19,.32),transparent 55%)}
+.hero-copy{position:relative;z-index:2;min-height:100%;width:58%;padding:140px 0 95px 8%;justify-content:center}
+.hero .eyebrow{color:#f4d28f;letter-spacing:.19em}
+.hero h1{font-size:clamp(54px,6.4vw,88px);line-height:.99;max-width:680px;margin:24px 0 15px;text-shadow:0 3px 20px #2e211655}
+.hero h1 em{color:#fff1c8}
+.hero-copy p{font-size:15px;line-height:1.8;color:#fff9ed;max-width:410px;text-shadow:0 1px 10px #2c211a60}
+.hero .btn{background:#b87935;border-color:#b87935;color:white;border-radius:28px;padding:15px 24px;box-shadow:0 8px 24px #39251625;text-transform:none;font-size:12px;letter-spacing:.02em}
+.hero .btn:hover{background:#9f6127;border-color:#9f6127}
+.hero .underlink{border-color:#fff9d8;color:white}
+.hero-image{position:absolute;z-index:1;right:4%;bottom:0;width:43%;height:82%;min-height:0;background:none;display:flex;align-items:flex-end;justify-content:center}
+.hero-image:after{display:none}
+.hero-jar{width:min(88%,470px);height:90%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 24px 24px #2d1b0d45);mix-blend-mode:normal;mask-image:linear-gradient(to bottom,black 0%,black 80%,transparent 100%);border-radius:0}
+.image-caption{left:auto;right:0;bottom:36px;background:rgba(255,250,238,.93);color:#503820;border-radius:3px;padding:12px 16px;font-size:16px;box-shadow:0 6px 22px #32200c18}
+.trust{background:#f5efe2}
+.section-heading h2{font-size:clamp(36px,4vw,56px)}
+@media(min-width:1400px){.hero-copy{padding-left:max(8%,calc((100vw - 1240px)/2))}.hero-image{right:max(5%,calc((100vw - 1450px)/2))}}
+@media(max-width:680px){
+ .header{height:72px;padding:0 5%;background:linear-gradient(180deg,rgba(39,30,19,.32),transparent)}
+ .brand img{width:59px;height:56px}
+ .nav{top:72px;background:rgba(255,250,240,.98);box-shadow:0 14px 35px #24190e22;border:0}
+ .nav a{color:#2b382b;text-shadow:none}
+ .bag{background:#fffaf0;color:#49321d;padding:9px 11px;border:0}
+ .menu{color:white}
+ .hero{height:auto;min-height:0;max-height:none;display:flex;flex-direction:column;background-position:54% center}
+ .hero:before{background:linear-gradient(90deg,rgba(35,27,19,.48),rgba(35,27,19,.18)),linear-gradient(0deg,rgba(34,25,17,.38),transparent 70%)}
+ .hero-copy{width:100%;min-height:0;padding:132px 6.5% 24px;justify-content:flex-start}
+ .hero .eyebrow{font-size:9px;letter-spacing:.13em}
+ .hero h1{font-size:clamp(43px,11.8vw,61px);line-height:1.01;margin:19px 0 12px;max-width:500px}
+ .hero-copy p{font-size:12px;line-height:1.75;max-width:320px}
+ .actions{gap:14px;margin-top:17px}
+ .hero .btn{font-size:11px;padding:13px 19px;min-height:44px}
+ .hero .underlink{font-size:10px}
+ .hero-image{position:relative;right:auto;bottom:auto;width:100%;height:290px;min-height:0;display:flex;align-items:flex-end;justify-content:center;margin-top:-3px}
+ .hero-jar{height:100%;width:min(83%,340px);object-position:center bottom}
+ .image-caption{right:5%;bottom:18px;padding:10px 12px;font-size:14px}
+ .trust{padding:20px 5%;gap:15px 8px}
+ .section{padding:55px 5%}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 11px}
+ .product-photo{height:auto;aspect-ratio:.78}
+ .product-desc{min-height:0}
+ .origin-copy{padding:43px 6.5% 48px}
+ .footer{grid-template-columns:1fr 1fr}
+}
+@media(max-width:380px){
+ .hero-copy{padding-top:119px}
+ .hero h1{font-size:41px}
+ .hero-image{height:250px}
+ .hero .underlink{font-size:9px}
+ .bag{font-size:8px;padding:8px}
+}
 </style></head><body>
 <div class="announcement">De nuestra familia para tu mesa · Miel artesanal de l'Alcora</div>
 <header class="header"><a class="brand" href="#inicio" aria-label="Miel de Castillo, inicio"><img src="7C3E3030-3EC1-4320-A4F8-6EFA7DE0A4C2.png" alt="Logo original Miel de Castillo"></a><nav class="nav" id="nav"><a href="#coleccion">Las mieles</a><a href="#origen">Nuestra historia</a><a href="#filosofia">Lo que nos define</a><a href="#contacto">Contacto</a></nav><div class="head-right"><button class="bag" onclick="openCart()">Mi cesta <b id="count">0</b></button></div><button class="menu" id="menu" aria-label="Abrir menú">☰</button></header>
-<main><section class="hero" id="inicio"><div class="hero-copy"><div class="eyebrow">Alcalatén · l'Alcora · Castellón</div><h1>El sabor de la tierra.<br><em>El cuidado de siempre.</em></h1><p>Desde l’Alcora, cuidamos nuestras colmenas y elaboramos miel con respeto por las abejas y por el entorno. Una pequeña historia familiar que queremos compartir contigo, tarro a tarro.</p><div class="actions"><a class="btn" href="#coleccion">Explorar nuestras mieles <span>↗</span></a><a class="underlink" href="#origen">Conoce nuestra historia</a></div></div><div class="hero-image" role="img" aria-label="Miel dorada natural"><div class="image-caption">La naturaleza, sin prisas.</div></div></section>
+<main><section class="hero" id="inicio"><div class="hero-copy"><div class="eyebrow">Alcalatén · l'Alcora · Castellón</div><h1>El sabor de la tierra.<br><em>El cuidado de siempre.</em></h1><p>Desde l’Alcora, cuidamos nuestras colmenas y elaboramos miel con respeto por las abejas y por el entorno. Una pequeña historia familiar que queremos compartir contigo, tarro a tarro.</p><div class="actions"><a class="btn" href="#coleccion">Explorar nuestras mieles <span>↗</span></a><a class="underlink" href="#origen">Conoce nuestra historia</a></div></div><div class="hero-image" aria-label="Paisaje de montaña al atardecer y miel artesanal"><img class="hero-jar" src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=90" alt="Tarro de miel artesanal"><div class="image-caption">La naturaleza, sin prisas.</div></div></section>
 <div class="trust"><div><span>✳</span> Miel de origen artesanal</div><div><span>⌂</span> Proyecto familiar</div><div><span>❧</span> Inspirada en nuestra tierra</div><div><span>✦</span> Siete variedades</div></div>
 <section class="section" id="coleccion"><div class="section-heading"><div class="eyebrow">Nuestra selección</div><h2>Un mundo de matices.<br>Un origen que nos une.</h2><p>Siete variedades, cada una con su carácter. Encuentra la que mejor encaja contigo.</p></div><div class="products" id="products"></div><p class="collection-note">Tarros de 1 kg · Consulta disponibilidad antes de realizar tu pedido.</p></section>
 <section class="origin" id="origen"><div class="origin-image" role="img" aria-label="Paisaje de naturaleza mediterránea"></div><div class="origin-copy"><div class="eyebrow">Una historia cercana</div><h2>Un castillo.<br>Una familia.<br>Una pasión.</h2><p>Miel de Castillo es un proyecto familiar nacido en l’Alcora, junto al castillo de Alcalatén. En casa, la apicultura se vive de cerca: cuidar las colmenas, observar los ciclos de la naturaleza y trabajar con paciencia. Queremos que cada tarro conserve algo de ese lugar y de las personas que hay detrás.</p><a class="btn" href="#filosofia">Nuestra manera de hacer <span>↗</span></a></div></section>
